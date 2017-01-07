@@ -62,16 +62,17 @@
                         <outlet property="cameraButton" destination="0L3-HJ-Ehh" id="IEF-2r-cvB"/>
                         <outlet property="previewView" destination="vnw-Al-diS" id="oJB-A0-RSW"/>
                         <outlet property="recordButton" destination="vgk-Qd-pbp" id="O5F-js-AN0"/>
+                        <segue destination="6U1-zw-iNo" kind="presentation" identifier="LoginVC" id="egx-tr-nsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="f8l-GB-XN5">
             <objects>
-                <viewController id="6U1-zw-iNo" sceneMemberID="viewController">
+                <viewController id="6U1-zw-iNo" customClass="LoginVC" customModule="DevChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zdL-ft-h8U"/>
                         <viewControllerLayoutGuide type="bottom" id="HAI-PZ-hcw"/>
@@ -130,7 +131,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPy-gH-xeR" customClass="RoundTextField" customModule="DevChat" customModuleProvider="target">
-                                <rect key="frame" x="55.5" y="311" width="265" height="42"/>
+                                <rect key="frame" x="55" y="311" width="265" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="0I5-g6-rzQ"/>
                                     <constraint firstAttribute="width" constant="265" id="O8j-Fb-b4f"/>
@@ -173,6 +174,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
@@ -199,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Scd-uK-cFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="38.23088455772114"/>
+            <point key="canvasLocation" x="889" y="38"/>
         </scene>
     </scenes>
     <resources>
