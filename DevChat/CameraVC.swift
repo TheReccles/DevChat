@@ -29,11 +29,12 @@ class CameraVC: CameraViewController, CameraViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         //check to see if someone is logged in or not
-        guard FIRAuth.auth()?.currentUser != nil else {
-            //load loginVC
-            performSegue(withIdentifier: "LoginVC", sender: nil)
-            return
-        }
+        performSegue(withIdentifier: "LoginVC", sender: nil)
+//        guard FIRAuth.auth()?.currentUser != nil else {
+//            //load loginVC
+//            performSegue(withIdentifier: "LoginVC", sender: nil)
+//            return
+//        }
     }
 
     @IBAction func recordBtnPressed(_ sender: Any) {
