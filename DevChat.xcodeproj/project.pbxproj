@@ -17,6 +17,8 @@
 		A4913F3B1E1C9DBA002BECF8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4913F391E1C9DBA002BECF8 /* CameraViewController.swift */; };
 		A4913F3F1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4913F3E1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift */; };
 		A4DAC98A1E208E60003B1D96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4DAC9891E208E60003B1D96 /* GoogleService-Info.plist */; };
+		A4DAC98C1E217D5C003B1D96 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */; };
+		A4DAC98E1E21821B003B1D96 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */; };
 		AA16B79E9C308F7FEBB926BD /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E6189560FD62940FD3294F /* Pods_DevChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		A4913F391E1C9DBA002BECF8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A4913F3E1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		A4DAC9891E208E60003B1D96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		B9E6189560FD62940FD3294F /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				A4913F381E1C9DBA002BECF8 /* PreviewView.swift */,
+				A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */,
+				A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				A4913F261E1C9A07002BECF8 /* CameraVC.swift in Sources */,
 				A4913F3B1E1C9DBA002BECF8 /* CameraViewController.swift in Sources */,
 				A4202BDD1E2075C90055E1E7 /* CameraViewControllerDelegate.swift in Sources */,
+				A4DAC98E1E21821B003B1D96 /* RoundedButton.swift in Sources */,
+				A4DAC98C1E217D5C003B1D96 /* RoundTextField.swift in Sources */,
 				A4913F3A1E1C9DBA002BECF8 /* PreviewView.swift in Sources */,
 				A4913F3F1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift in Sources */,
 				A4913F241E1C9A07002BECF8 /* AppDelegate.swift in Sources */,
