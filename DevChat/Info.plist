@@ -34,12 +34,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need a camera access to use this app!</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need a microphone access to use this app!</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>We need to use your Camera Roll to store pics and vids!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>JUST LET ME USE IT</string>
 </dict>
 </plist>

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-Al-diS" customClass="PreviewView" customModule="DevChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgk-Qd-pbp">
+                                <rect key="frame" x="156" y="601" width="63" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="eCn-Bx-AG9"/>
+                                    <constraint firstAttribute="width" constant="63" id="hKm-ze-Wpz"/>
+                                </constraints>
+                                <state key="normal" image="createsnap_btn"/>
+                                <connections>
+                                    <action selector="recordBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Vf-i6-1XP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-HJ-Ehh">
+                                <rect key="frame" x="282" y="28" width="69" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="nki-ar-WOE"/>
+                                    <constraint firstAttribute="width" constant="69" id="vmc-xA-j6E"/>
+                                </constraints>
+                                <state key="normal" image="camera_icon_snap"/>
+                                <connections>
+                                    <action selector="changeCameraBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4H-zi-Jha"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vgk-Qd-pbp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1eZ-lL-TeA"/>
+                            <constraint firstItem="0L3-HJ-Ehh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8X2-4H-yuh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0L3-HJ-Ehh" secondAttribute="trailing" constant="8" id="9ha-HS-EkH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vgk-Qd-pbp" secondAttribute="bottom" constant="8" id="fv9-6z-rq8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="0L3-HJ-Ehh" id="IEF-2r-cvB"/>
+                        <outlet property="previewView" destination="vnw-Al-diS" id="oJB-A0-RSW"/>
+                        <outlet property="recordButton" destination="vgk-Qd-pbp" id="O5F-js-AN0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="36" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera_icon_snap" width="29" height="24"/>
+        <image name="createsnap_btn" width="30" height="30"/>
+    </resources>
 </document>
