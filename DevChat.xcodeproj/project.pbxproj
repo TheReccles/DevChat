@@ -20,6 +20,7 @@
 		A4DAC98C1E217D5C003B1D96 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */; };
 		A4DAC98E1E21821B003B1D96 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */; };
 		A4DAC9901E218598003B1D96 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98F1E218598003B1D96 /* LoginVC.swift */; };
+		A4DAC9931E218AD3003B1D96 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC9921E218AD3003B1D96 /* AuthService.swift */; };
 		AA16B79E9C308F7FEBB926BD /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E6189560FD62940FD3294F /* Pods_DevChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A4DAC98F1E218598003B1D96 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A4DAC9921E218AD3003B1D96 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B9E6189560FD62940FD3294F /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		A4913F221E1C9A07002BECF8 /* DevChat */ = {
 			isa = PBXGroup;
 			children = (
+				A4DAC9911E218AC2003B1D96 /* Services */,
 				A4202BDB1E20758D0055E1E7 /* Protocols */,
 				A4913F3D1E1C9DD3002BECF8 /* View */,
 				A4913F3C1E1C9DC8002BECF8 /* Controller */,
@@ -126,6 +129,14 @@
 				A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A4DAC9911E218AC2003B1D96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAC9921E218AD3003B1D96 /* AuthService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		EECB8C319C856E3771713D24 /* Frameworks */ = {
@@ -268,6 +279,7 @@
 				A4DAC98C1E217D5C003B1D96 /* RoundTextField.swift in Sources */,
 				A4DAC9901E218598003B1D96 /* LoginVC.swift in Sources */,
 				A4913F3A1E1C9DBA002BECF8 /* PreviewView.swift in Sources */,
+				A4DAC9931E218AD3003B1D96 /* AuthService.swift in Sources */,
 				A4913F3F1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift in Sources */,
 				A4913F241E1C9A07002BECF8 /* AppDelegate.swift in Sources */,
 			);
