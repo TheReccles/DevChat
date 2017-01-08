@@ -29,12 +29,11 @@ class CameraVC: CameraViewController, CameraViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         //check to see if someone is logged in or not
-        performSegue(withIdentifier: "LoginVC", sender: nil)
-//        guard FIRAuth.auth()?.currentUser != nil else {
-//            //load loginVC
-//            performSegue(withIdentifier: "LoginVC", sender: nil)
-//            return
-//        }
+        guard FIRAuth.auth()?.currentUser != nil else {
+            //load loginVC
+            performSegue(withIdentifier: "LoginVC", sender: nil)
+            return
+        }
     }
 
     @IBAction func recordBtnPressed(_ sender: Any) {
@@ -46,6 +45,7 @@ class CameraVC: CameraViewController, CameraViewControllerDelegate {
         
         changeCamera()
     }
+    
     
     func shouldEnableCameraUI(enabled: Bool) {
         cameraButton.isEnabled = enabled
@@ -65,5 +65,35 @@ class CameraVC: CameraViewController, CameraViewControllerDelegate {
         print("can start recording")
         
     }
+    
+    func videoRecordingComplete(videoURL: NSURL) {
+        performSegue(withIdentifier: "UsersVC", sender: ["videoURL":videoURL])
+    }
+    
+    func videoRecordingFailed() {
+        
+    }
+    
+    func snapshotTaken(snapshotData: NSData) {
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData":snapshotData])
+    }
+    
+    func snapshotFailed() {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let usersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String, URL> {
+                let url = videoDict["videoURL"]
+                usersVC.videoURL = url
+            }
+            else if let snapDict = sender as? Dictionary<String, Data> {
+                let snapData = snapDict["snapshotData"]
+                usersVC.snapData = snapData
+            }
+        }
+    }
+    
 }
 

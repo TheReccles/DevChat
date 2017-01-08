@@ -549,6 +549,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 				photoSettings.livePhotoMovieFileURL = URL(fileURLWithPath: livePhotoMovieFilePath)
 			}
 			
+            
 			// Use a separate object for the photo capture delegate to isolate each capture life cycle.
 			let photoCaptureDelegate = PhotoCaptureDelegate(with: photoSettings, willCapturePhotoAnimation: {
 					DispatchQueue.main.async { [unowned self] in
@@ -737,9 +738,15 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		if error != nil {
 			print("Movie file finishing error: \(error)")
 			success = (((error as NSError).userInfo[AVErrorRecordingSuccessfullyFinishedKey] as AnyObject).boolValue)!
+            self.delegate.videoRecordingFailed()
 		}
 		
 		if success {
+            
+            self.delegate.videoRecordingComplete(videoURL: outputFileURL as NSURL)
+            
+            //do not save recordings to camera roll!!!!!! - RICKY
+            /*
 			// Check authorization status.
 			PHPhotoLibrary.requestAuthorization { status in
 				if status == .authorized {
@@ -760,9 +767,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 				else {
 					cleanup()
 				}
-			}
+			}*/
 		}
 		else {
+            self.delegate.videoRecordingFailed()
 			cleanup()
 		}
 		

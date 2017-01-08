@@ -14,5 +14,9 @@ protocol CameraViewControllerDelegate {
     func shouldEnableCameraUI(enabled: Bool)
     func canStartRecording()
     func recordingHasStarted()
+    func videoRecordingComplete(videoURL: NSURL)
+    func videoRecordingFailed()
+    func snapshotTaken(snapshotData: NSData)
+    func snapshotFailed()
     
 }
