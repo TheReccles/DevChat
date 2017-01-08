@@ -22,6 +22,9 @@
 		A4DAC9901E218598003B1D96 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC98F1E218598003B1D96 /* LoginVC.swift */; };
 		A4DAC9931E218AD3003B1D96 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC9921E218AD3003B1D96 /* AuthService.swift */; };
 		A4DAC9951E219C85003B1D96 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC9941E219C85003B1D96 /* DataService.swift */; };
+		A4DAC9971E21E85E003B1D96 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC9961E21E85E003B1D96 /* UsersVC.swift */; };
+		A4DAC9991E21E995003B1D96 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC9981E21E995003B1D96 /* UserCell.swift */; };
+		A4DAC99B1E21EE24003B1D96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAC99A1E21EE24003B1D96 /* User.swift */; };
 		AA16B79E9C308F7FEBB926BD /* Pods_DevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E6189560FD62940FD3294F /* Pods_DevChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		A4DAC98F1E218598003B1D96 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A4DAC9921E218AD3003B1D96 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A4DAC9941E219C85003B1D96 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A4DAC9961E21E85E003B1D96 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		A4DAC9981E21E995003B1D96 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A4DAC99A1E21EE24003B1D96 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6189560FD62940FD3294F /* Pods_DevChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,7 @@
 				A4913F2F1E1C9A07002BECF8 /* LaunchScreen.storyboard */,
 				A4913F321E1C9A07002BECF8 /* Info.plist */,
 				A4DAC9891E208E60003B1D96 /* GoogleService-Info.plist */,
+				A4DAC99A1E21EE24003B1D96 /* User.swift */,
 			);
 			path = DevChat;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 				A4913F251E1C9A07002BECF8 /* CameraVC.swift */,
 				A4913F391E1C9DBA002BECF8 /* CameraViewController.swift */,
 				A4DAC98F1E218598003B1D96 /* LoginVC.swift */,
+				A4DAC9961E21E85E003B1D96 /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 				A4913F381E1C9DBA002BECF8 /* PreviewView.swift */,
 				A4DAC98B1E217D5C003B1D96 /* RoundTextField.swift */,
 				A4DAC98D1E21821B003B1D96 /* RoundedButton.swift */,
+				A4DAC9981E21E995003B1D96 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -276,16 +285,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4913F261E1C9A07002BECF8 /* CameraVC.swift in Sources */,
+				A4DAC9991E21E995003B1D96 /* UserCell.swift in Sources */,
 				A4913F3B1E1C9DBA002BECF8 /* CameraViewController.swift in Sources */,
 				A4202BDD1E2075C90055E1E7 /* CameraViewControllerDelegate.swift in Sources */,
 				A4DAC98E1E21821B003B1D96 /* RoundedButton.swift in Sources */,
 				A4DAC98C1E217D5C003B1D96 /* RoundTextField.swift in Sources */,
+				A4DAC99B1E21EE24003B1D96 /* User.swift in Sources */,
 				A4DAC9951E219C85003B1D96 /* DataService.swift in Sources */,
 				A4DAC9901E218598003B1D96 /* LoginVC.swift in Sources */,
 				A4913F3A1E1C9DBA002BECF8 /* PreviewView.swift in Sources */,
 				A4DAC9931E218AD3003B1D96 /* AuthService.swift in Sources */,
 				A4913F3F1E1C9ED3002BECF8 /* PhotoCaptureDelegate.swift in Sources */,
 				A4913F241E1C9A07002BECF8 /* AppDelegate.swift in Sources */,
+				A4DAC9971E21E85E003B1D96 /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
